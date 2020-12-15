@@ -1,5 +1,5 @@
 //ACTION CREATOR
-export const selectBook = () => {
+export const selectBook = book => {
     //RETURN AN ACTION
     return {
         type: 'BOOK_SELECTED',
