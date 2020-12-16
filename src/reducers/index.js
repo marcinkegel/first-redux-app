@@ -1,3 +1,5 @@
+import {combineReducers} from "redux";
+
 const booksReducer =()=> {
   return [
       {title: "The Long Earth", author: "Terry Pratchett, Stephen Baxter"},
@@ -12,4 +14,9 @@ const selectedBookReducer = (selectedSong=null, action) => {
         return action.payload;
     }
     return selectedSong;
-}
+};
+
+export default combineReducers({
+    books: booksReducer,
+    selectedBook: selectedBookReducer
+});
