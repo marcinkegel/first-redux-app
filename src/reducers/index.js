@@ -9,11 +9,11 @@ const booksReducer =()=> {
   ];
 };
 
-const selectedBookReducer = (selectedSong=null, action) => {
+const selectedBookReducer = (selectedBook=null, action) => {
     if (action.type === 'BOOK_SELECTED') {
         return action.payload;
     }
-    return selectedSong;
+    return selectedBook;
 };
 
 export default combineReducers({
